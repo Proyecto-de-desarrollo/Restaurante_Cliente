@@ -3,6 +3,9 @@ package Vista;
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;
+
+import Controlador.GestionUsuarios;
+
 import java.awt.event.*;
 
 public class VentanaRegistro extends JFrame {
@@ -103,18 +106,25 @@ public class VentanaRegistro extends JFrame {
         btnRegistrarse.setBorder(new LineBorder(new Color(0, 102, 204), 2, true));
         btnRegistrarse.setFocusPainted(false);
         panel.add(btnRegistrarse);
-
         btnRegistrarse.addActionListener(e -> {
-            String nombreUsuario = txtNombreDeUsuario.getText();
-            String contrasena = String.valueOf(passwordField.getPassword());
-            if (!nombreUsuario.equals("Nombre de usuario") && !contrasena.equals("Contraseña")) {
+            String nombreUsuario = txtNombreDeUsuario.getText().trim();
+            String contrasena = new String(passwordField.getPassword()).trim();
+
+            if (nombreUsuario.equals("Nombre de usuario") || nombreUsuario.isEmpty() ||
+                contrasena.equals("Contraseña") || contrasena.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Por favor, completa todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            if (GestionUsuarios.registrarUsuario(nombreUsuario, contrasena)) {
                 JOptionPane.showMessageDialog(null, "Usuario registrado con éxito");
                 dispose();
                 new VentanaLogin().setVisible(true);
             } else {
-                JOptionPane.showMessageDialog(null, "Por favor, completa todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "El usuario ya existe", "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
+
 
         JLabel lblIniciarSesion = new JLabel("VOLVER A INICIAR SESIÓN");
         lblIniciarSesion.setHorizontalAlignment(SwingConstants.CENTER);
