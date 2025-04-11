@@ -87,8 +87,12 @@ public class VentanaInicioCliente extends JFrame {
         
         btnMenu = new JButton("MENÚ");
         btnMenu.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        	}
+            public void actionPerformed(ActionEvent e) {
+                VentanaMenu ventanaMenu = new VentanaMenu(usuario);
+                ventanaMenu.setVisible(true);
+                setVisible(false);
+                dispose(); // Cierra VentanaInicioCliente
+            }
         });
         btnMenu.setFont(new Font("Segoe UI", Font.PLAIN, 12));
         btnMenu.setBackground(new Color(255, 255, 255));

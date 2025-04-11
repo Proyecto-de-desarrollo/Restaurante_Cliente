@@ -4,7 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;
 
-import Controlador.GestionUsuarios;
+import Servicio.GestionUsuarios;
 
 import java.awt.event.*;
 

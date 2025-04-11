@@ -9,7 +9,7 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.border.TitledBorder;
 
-import Controlador.GestionMesas;
+import Servicio.GestionMesas;
 
 import javax.swing.JLabel;
 import java.awt.Font;

@@ -4,7 +4,9 @@ import javax.swing.*;
 import java.util.Map;
 import java.awt.*;
 import javax.swing.border.LineBorder;
-import Controlador.GestionMesas;
+
+import Servicio.GestionMesas;
+
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.awt.event.ActionEvent;
