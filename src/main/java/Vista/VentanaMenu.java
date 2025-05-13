@@ -28,7 +28,6 @@ public class VentanaMenu extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 
-		// Botón FUERTE
 		ImageIcon iconFuerteOriginal = new ImageIcon(getClass().getResource("/Vista/imagenes/imagenes/food-tray.png"));
 		Image iconFuerteEscalado = iconFuerteOriginal.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
 		JButton btnFuerte = new JButton("Fuerte");
@@ -47,7 +46,6 @@ public class VentanaMenu extends JFrame {
 			}
 		});
 
-		// Botón BEBIDAS
 		ImageIcon iconBebidasOriginal = new ImageIcon(getClass().getResource("/Vista/imagenes/imagenes/soda.png"));
 		Image iconBebidasEscalado = iconBebidasOriginal.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
 		JButton btnBebidas = new JButton("Bebidas");
@@ -64,7 +62,6 @@ public class VentanaMenu extends JFrame {
 			dispose();
 		});
 
-		// Botón POSTRES
 		ImageIcon iconPostresOriginal = new ImageIcon(getClass().getResource("/Vista/imagenes/imagenes/cupcake.png"));
 		Image iconPostresEscalado = iconPostresOriginal.getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH);
 		JButton btnPostres = new JButton("Postres");
@@ -81,7 +78,6 @@ public class VentanaMenu extends JFrame {
 			dispose();
 		});
 
-		// Título
 		JLabel lblTitulo = new JLabel("MENÚ");
 		lblTitulo.setFont(new Font("Consolas", Font.BOLD, 26));
 		lblTitulo.setBounds(188, 10, 123, 40);
@@ -96,7 +92,6 @@ public class VentanaMenu extends JFrame {
 			dispose();
 		});
 
-		// Botón Regresar
 		JButton btnRegresar = new JButton("Regresar");
 		btnRegresar.setBounds(10, 269, 100, 21);
 		panel.add(btnRegresar);

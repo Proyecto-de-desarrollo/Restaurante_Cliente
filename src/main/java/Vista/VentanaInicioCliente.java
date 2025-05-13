@@ -91,7 +91,7 @@ public class VentanaInicioCliente extends JFrame {
                 VentanaMenu ventanaMenu = new VentanaMenu(usuario);
                 ventanaMenu.setVisible(true);
                 setVisible(false);
-                dispose(); // Cierra VentanaInicioCliente
+                dispose(); 
             }
         });
         btnMenu.setFont(new Font("Segoe UI", Font.PLAIN, 12));
