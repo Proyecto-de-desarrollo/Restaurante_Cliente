@@ -8,6 +8,7 @@ import retrofit2.http.*;
 import java.util.List;
 
 public interface ApiPedido {
+
     @GET("/api/pedidos/user/{userId}")
     Call<List<Pedido>> getPedidosByUser(@Header("Authorization") String token, @Path("userId") Integer userId);
 

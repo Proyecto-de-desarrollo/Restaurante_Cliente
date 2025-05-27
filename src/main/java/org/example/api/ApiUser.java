@@ -9,6 +9,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface ApiUser {
+    
     @POST("/api/usuarios/login")
     Call<LoginResponseDTO> login(@Body LoginRequestDTO loginRequestDTO);
 
