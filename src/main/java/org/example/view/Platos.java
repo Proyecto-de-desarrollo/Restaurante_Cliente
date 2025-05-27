@@ -153,6 +153,8 @@ public class Platos extends javax.swing.JFrame {
             descripcion = "Plato fuerte";
             llenarLabels();
             return;
+
+
         }
         descripcion = descripcion + ", plato fuerte";
         llenarLabels();
@@ -163,6 +165,8 @@ public class Platos extends javax.swing.JFrame {
             descripcion = "Plato liviano";
             llenarLabels();
             return;
+
+
         }
         descripcion = descripcion + ", plato liviano";
         llenarLabels();

@@ -157,6 +157,7 @@ public class Bebidas extends javax.swing.JFrame {
             description = "Agua";
             llenarLabels();
             return;
+
         }
         description = description + ", agua";
         llenarLabels();
@@ -187,10 +188,14 @@ public class Bebidas extends javax.swing.JFrame {
             description = "Jugo";
             llenarLabels();
             return;
+
+
         }
         description = description + ", jugo";
         llenarLabels();
     }//GEN-LAST:event_jugosButtonActionPerformed
+
+
 
     private void returnButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnButtonActionPerformed
         PrepararPedido pp = new PrepararPedido(user, description);

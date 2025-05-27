@@ -32,6 +32,8 @@ public class Mesas extends javax.swing.JFrame implements ActionListener {
         this.user = user;
         this.mesas = mesaController.getMesasByUser(user);
         pintarBotones(mesas);
+
+        
     }
 
     public void pintarBotones(List<Mesa> espacios) {
