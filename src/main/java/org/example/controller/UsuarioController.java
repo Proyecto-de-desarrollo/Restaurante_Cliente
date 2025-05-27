@@ -8,6 +8,7 @@ public class UsuarioController {
     private UsuarioService usuarioService;
 
     public UsuarioController() {
+
         this.usuarioService = new UsuarioService();
     }
 

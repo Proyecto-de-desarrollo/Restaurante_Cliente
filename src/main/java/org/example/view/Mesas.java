@@ -33,7 +33,7 @@ public class Mesas extends javax.swing.JFrame implements ActionListener {
         this.mesas = mesaController.getMesasByUser(user);
         pintarBotones(mesas);
 
-        
+
     }
 
     public void pintarBotones(List<Mesa> espacios) {

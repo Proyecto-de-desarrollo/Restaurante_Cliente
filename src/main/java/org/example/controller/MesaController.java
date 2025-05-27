@@ -10,12 +10,20 @@ public class MesaController {
     private MesaService mesaService;
 
     public MesaController(){
+
         this.mesaService = new MesaService();
     }
 
-    public List<Mesa> getMesasByUser(LoginResponseDTO token) { return this.mesaService.getMesasByUser(token);}
+    public List<Mesa> getMesasByUser(LoginResponseDTO token) {
 
-    public void ocuparMesa(LoginResponseDTO token, int numeroMesa) { this.mesaService.ocuparMesa(token, numeroMesa);}
+        return this.mesaService.getMesasByUser(token);
+    }
 
-    public void desocuparMesa(LoginResponseDTO token, int numeroMesa) { this.mesaService.desocuparMesa(token, numeroMesa);}
+    public void ocuparMesa(LoginResponseDTO token, int numeroMesa) {
+        this.mesaService.ocuparMesa(token, numeroMesa);
+    }
+
+    public void desocuparMesa(LoginResponseDTO token, int numeroMesa) {
+        this.mesaService.desocuparMesa(token, numeroMesa);
+    }
 }
