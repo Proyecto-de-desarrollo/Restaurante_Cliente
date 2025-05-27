@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class MesaService {
-    private String BASE_URL = "http://localhost:8080";
+    private String BASE_URL = "https://restaurante-backend-fqb5.onrender.com/";
     private ApiMesas apiService;
 
     public MesaService() {
