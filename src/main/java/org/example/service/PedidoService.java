@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class PedidoService {
-    private String BASE_URL = "http://localhost:8080";
+    private String BASE_URL = "https://restaurante-backend-fqb5.onrender.com/";
     private ApiPedido apiService;
 
     public PedidoService() {

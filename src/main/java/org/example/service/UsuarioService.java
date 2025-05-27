@@ -16,7 +16,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class UsuarioService {
-    private String BASE_URL = "http://localhost:8080";
+    private String BASE_URL = "https://restaurante-backend-fqb5.onrender.com/";
     private ApiUser apiService;
 
     public UsuarioService() {
